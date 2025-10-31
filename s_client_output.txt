@@ -1,4 +1,4 @@
-CONNECTED(000001F0)
+CONNECTED(000001F4)
 ---
 Certificate chain
  0 s:CN=github.com
@@ -113,18 +113,18 @@ Post-Handshake New Session Ticket arrived:
 SSL-Session:
     Protocol  : TLSv1.3
     Cipher    : TLS_AES_128_GCM_SHA256
-    Session-ID: A7B2B93EC030137A3FC3582E8A93AE94AAA7B9DE87F4C554BE14BD988A81FA50
+    Session-ID: 9BDC6641F2529EAB5679F3533707473115B3B13BDCB3DB8AFDCCBEE06221A63B
     Session-ID-ctx: 
-    Resumption PSK: 3EF78BAD6E087F1057A927D9FC75AE4C12FE2091E922B36D1EE3DC1A05691222
+    Resumption PSK: 3B0270294419CCC1FCB4D2F778CC75E24C15B158DE70101CD525B40B1BD298B5
     PSK identity: None
     PSK identity hint: None
     SRP username: None
     TLS session ticket lifetime hint: 7200 (seconds)
     TLS session ticket:
-    0000 - fa 7b 4b e7 2b c2 2b 43-b7 c5 9a 43 e9 bc 36 a4   .{K.+.+C...C..6.
-    0010 - 58 cd 9d 8e c8 a9 56 3b-7b 98 c6 71 82 24 c8 f8   X.....V;{..q.$..
+    0000 - 8c ef a5 c5 c0 a2 48 5f-25 44 52 9c 1e dc 70 03   ......H_%DR...p.
+    0010 - 2c 08 e7 26 e3 ec 63 28-ff 0b f7 f6 cc 7c d8 28   ,..&..c(.....|.(
 
-    Start Time: 1761906389
+    Start Time: 1761909325
     Timeout   : 7200 (sec)
     Verify return code: 20 (unable to get local issuer certificate)
     Extended master secret: no
@@ -136,18 +136,18 @@ Post-Handshake New Session Ticket arrived:
 SSL-Session:
     Protocol  : TLSv1.3
     Cipher    : TLS_AES_128_GCM_SHA256
-    Session-ID: D32166D9EC5356123C8B8EFD9ABE1098832C7762FDA985444F589543009D75AD
+    Session-ID: 8BE9584BB888A634542D9D7929DF33E39FE7F6922EE22E18E3FA13644B1C75F3
     Session-ID-ctx: 
-    Resumption PSK: 3B10F56D3F44EFA4D27E5D904BEBCAB0151549BDA4EDED48B79E19F42C66A3CA
+    Resumption PSK: 396C026BE0CC57D47DE29496BBD46C0B74E40A99ADF656F24C517EDFF0012D6C
     PSK identity: None
     PSK identity hint: None
     SRP username: None
     TLS session ticket lifetime hint: 7200 (seconds)
     TLS session ticket:
-    0000 - c7 a4 7e 9c 3b cb 1d be-ce b9 1b a8 22 4b 69 6e   ..~.;......."Kin
-    0010 - 32 ad 37 a9 24 90 a1 68-26 de 81 fe d0 b7 f3 e6   2.7.$..h&.......
+    0000 - d1 c5 48 ee 77 1c 68 1b-41 bd 99 4a 04 68 37 60   ..H.w.h.A..J.h7`
+    0010 - 03 e6 98 e4 b8 3f af a6-48 f1 b0 9f 64 66 60 db   .....?..H...df`.
 
-    Start Time: 1761906389
+    Start Time: 1761909325
     Timeout   : 7200 (sec)
     Verify return code: 20 (unable to get local issuer certificate)
     Extended master secret: no
