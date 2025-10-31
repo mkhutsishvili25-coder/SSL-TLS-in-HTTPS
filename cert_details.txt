@@ -75,7 +75,7 @@ Certificate:
                                 16:4B:1B:B8:B1:02:20:52:42:7E:C9:48:36:17:39:DD:
                                 0D:13:20:C2:47:75:C1:4E:5B:6B:60:1B:8B:41:03:57:
                                 4B:F3:CD:6D:5D:B3:27
-            X509v3 Subject Alternative Name: 
+            X509v3 Subject Alternative Name:
                 DNS:github.com, DNS:www.github.com
     Signature Algorithm: ecdsa-with-SHA256
     Signature Value:
