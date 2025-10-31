@@ -49,6 +49,8 @@ Extended Key Usage: TLS Web Server Authentication (serverAuth)
 SAN: github.com, www.github.com
 
 
+
+
 4. Wireshark Packet Analysis
 
 Filter used: tcp.port == 443
@@ -75,7 +77,48 @@ TLS handshake establishes an encrypted and authenticated channel.
 After handshake, HTTP messages are transmitted securely over this encrypted tunnel.
 This prevents eavesdropping, tampering, and impersonation.
 
-7. Conclusion
+
+
+
+7. Protection Against Man-in-the-Middle (MITM) Attacks
+
+TLS protects communication from interception and modification through multiple security mechanisms:
+
+7.1 Authentication:
+During the handshake, the server provides a digital certificate issued by a trusted Certificate Authority (CA).
+The client verifies the certificate’s authenticity and ensures it matches the intended domain, preventing attackers from posing as the legitimate server.
+
+7.2 Encryption:
+After the handshake, all exchanged data is encrypted using symmetric algorithms (such as AES),
+making it unreadable to anyone who intercepts the network traffic.
+
+7.3 Integrity Protection:
+Each TLS record includes a Message Authentication Code (MAC) or authentication tag (in AES-GCM),
+ensuring that no data can be modified without detection.
+
+7.4 Perfect Forward Secrecy (PFS):
+Ephemeral key exchange (e.g., X25519) ensures that even if the server’s long-term private key is compromised in the future,
+previously captured sessions cannot be decrypted.
+
+
+
+
+8. TLS Application in Websites
+
+TLS is the security layer that protects all modern websites using HTTPS.
+It ensures that communication between users and web servers is encrypted, authenticated, and tamper-proof.
+Typical applications include:
+
+Secure login and authentication (e.g., online banking, email, e-commerce).
+
+Protecting personal data entered into forms.
+
+Enabling trust indicators such as the HTTPS padlock icon in browsers.
+Without TLS, attackers could intercept or modify data exchanged over the Internet.
+
+
+
+9. Conclusion
 
 The analysis confirmed that github.com uses modern and secure TLS configuration:
 TLSv1.3 with AES-128-GCM, ECDSA certificates, and X25519 key exchange — ensuring confidentiality, integrity, and authentication for HTTPS connections.
